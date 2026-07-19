@@ -1,0 +1,11 @@
+# Godot-specific ignores
+.godot/
+.tmp/
+*.translation
+
+# Android export configurations
+android/
+
+# System specific files
+.DS_Store
+Thumbs.db
