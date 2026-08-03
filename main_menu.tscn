@@ -1,0 +1,185 @@
+[gd_scene format=3 uid="uid://gr53fsgsmwp2"]
+
+[ext_resource type="Script" uid="uid://bx3h5sln6rxy2" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://kdsj3flctlkx" path="res://UI Assets/BACKGROUNDS/interioir castle-night.png" id="2_fu7sn"]
+[ext_resource type="FontFile" uid="uid://r06v6qdss2n" path="res://selvina/Selvina.ttf" id="3_glbon"]
+[ext_resource type="Texture2D" uid="uid://bmhmlpen1um50" path="res://UI Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_blue.png" id="4_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://d4iefr4alm8oe" path="res://UI Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_blue_pressed.png" id="5_qe12f"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vog4r"]
+texture = ExtResource("4_nlkkf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1u6us"]
+texture = ExtResource("5_qe12f")
+modulate_color = Color(0.36449295, 0.37336776, 0.32109645, 1)
+
+[sub_resource type="Animation" id="Animation_nlkkf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VBoxContainer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10, 575)]
+}
+
+[sub_resource type="Animation" id="Animation_qe12f"]
+resource_name = "intro"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VBoxContainer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(10, 575), Vector2(139, 575)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8qtwp"]
+_data = {
+&"RESET": SubResource("Animation_nlkkf"),
+&"intro": SubResource("Animation_qe12f")
+}
+
+[node name="MainMenu" type="Control" unique_id=139726791]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1915374277]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fu7sn")
+expand_mode = 1
+
+[node name="TitleBack" type="RichTextLabel" parent="." unique_id=2125417493]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 288.0
+offset_right = 710.0
+offset_bottom = 611.0
+theme_override_colors/default_color = Color(0.0018410678, 0.0018410682, 0.0018410678, 1)
+theme_override_colors/font_outline_color = Color(0.21590185, 0.21590167, 0.21590167, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 0
+theme_override_fonts/normal_font = ExtResource("3_glbon")
+theme_override_font_sizes/normal_font_size = 250
+bbcode_enabled = true
+text = "[center][wave amp=50 freq=2]ReaDo[/wave][/center]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleMiddle" type="RichTextLabel" parent="." unique_id=1518106175]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 288.0
+offset_right = 710.0
+offset_bottom = 611.0
+theme_override_colors/default_color = Color(0.23790598, 0.40990052, 0.99222034, 1)
+theme_override_colors/font_outline_color = Color(0.21590185, 0.21590167, 0.21590167, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 0
+theme_override_fonts/normal_font = ExtResource("3_glbon")
+theme_override_font_sizes/normal_font_size = 250
+bbcode_enabled = true
+text = "[center][wave amp=50 freq=2.5]ReaDo[/wave][/center]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleFront" type="RichTextLabel" parent="." unique_id=960112977]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 288.0
+offset_right = 710.0
+offset_bottom = 611.0
+theme_override_colors/default_color = Color(0.7131886, 0.56201816, 0.8260917, 0.66200006)
+theme_override_colors/font_outline_color = Color(0.21590185, 0.21590167, 0.21590167, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("3_glbon")
+theme_override_font_sizes/normal_font_size = 250
+bbcode_enabled = true
+text = "[center][wave amp=50 freq=3]ReaDo[/wave][/center]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1247874545]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 575.0
+offset_right = 451.0
+offset_bottom = 1094.0
+theme_override_constants/separation = 13
+
+[node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=1595605523]
+custom_minimum_size = Vector2(100, 120)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.23898134, 0.716939, 0.8322439, 1)
+theme_override_fonts/font = ExtResource("3_glbon")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_vog4r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1u6us")
+text = "Start Journey"
+
+[node name="ArchiveButton" type="Button" parent="VBoxContainer" unique_id=407932220]
+custom_minimum_size = Vector2(100, 120)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.23898134, 0.716939, 0.8322439, 1)
+theme_override_fonts/font = ExtResource("3_glbon")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_vog4r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1u6us")
+text = "Archive"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=1136414459]
+custom_minimum_size = Vector2(100, 120)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.23898134, 0.716939, 0.8322439, 1)
+theme_override_fonts/font = ExtResource("3_glbon")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_vog4r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1u6us")
+text = "Settings
+"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1370636385]
+custom_minimum_size = Vector2(100, 120)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.23898134, 0.716939, 0.8322439, 1)
+theme_override_fonts/font = ExtResource("3_glbon")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_vog4r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1u6us")
+text = "Quit
+"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=603911054]
+libraries/ = SubResource("AnimationLibrary_8qtwp")
+autoplay = &"intro"
+
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ArchiveButton" to="." method="_on_archive_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

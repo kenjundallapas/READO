@@ -1,0 +1,127 @@
+{
+  "levels": [
+	{
+	  "module_id": 1,
+	  "chunks": [
+		{
+		  "text": "You are a brave Mage walking through the deep, shadowy Whispering Woods. The trees around you look sick and the leaves are turning brown. Suddenly, a strange plant monster blocks your path! The monster needs water to grow strong and block your way.\n\nYou watch closely as the hot sun shines brightly on a puddle near the monster's feet. The heat is so strong that it makes the water disappear into the air, turning it into an invisible gas. You remember from science class that this change is called [url=evaporation][color=yellow][wave]evaporation[/wave][/color][/url]. Without the puddle to drink from, the plant monster starts to look very weak and sleepy.",
+		  "simplified_text": "Hint: The sun's heat made the liquid water turn into an invisible gas. This means the puddle dried up, leaving the monster with nothing to drink!",
+		  "question": "Based on the story, why does the plant monster look weak and sleepy?",
+		  "options": [
+			"It drank too much water.",
+			"The water in the puddle evaporated.",
+			"It is afraid of the brave Mage.",
+            "The sun went down and it got dark."
+		  ],
+		  "correct_answer": 1
+		},
+		{
+		  "text": "With the plant monster defeated, you walk deeper into the woods. The air suddenly gets freezing cold. You find a massive wall of solid ice blocking the path, and a shivering Ice Slime jumps out to attack!\n\nYou remember that solid ice needs heat to melt. You use a basic Fire Spell to warm the air around the monster. The heat causes the solid ice to slowly turn into a puddle of liquid water. The Ice Slime melts away with the wall, leaving the path clear for you to pass.",
+		  "simplified_text": "Hint: The Mage used a Fire Spell to heat up the solid ice, turning it into a puddle of liquid water so they could pass!",
+		  "question": "How did the Mage defeat the solid Ice Slime?",
+		  "options": [
+			"By freezing it with cold wind.",
+			"By melting the ice into liquid water.",
+			"By drinking a magic blue potion.",
+            "By evaporating the puddle."
+		  ],
+		  "correct_answer": 1
+		},
+		{
+		  "text": "At the very end of the woods, a spooky Fog Ghost floats toward you. It is made entirely of thick, warm water vapor. It tries to cloud your vision!\n\nYou quickly use your Frost Wind spell to cool the air. The freezing cold air makes the water vapor turn back into tiny liquid water droplets. This scientific process is called [url=condensation][color=yellow][wave]condensation[/wave][/color][/url]. The ghost turns into a harmless rain shower, and you have successfully cleared the Whispering Woods!",
+		  "simplified_text": "Hint: The freezing Frost Wind cooled the warm vapor, turning it back into liquid water droplets. This is called condensation.",
+		  "question": "What does the Frost Wind spell do to the water vapor ghost?",
+		  "options": [
+			"It makes the ghost hotter.",
+			"It turns the ghost into solid wood.",
+			"It turns it into liquid water droplets.",
+            "It makes the ghost invisible."
+		  ],
+		  "correct_answer": 2
+		}
+	  ]
+	},
+	{
+	  "module_id": 2,
+	  "chunks": [
+		{
+		  "text": "You enter the mysterious Crystal Caves. The first thing you see is a wooden bridge guarded by a small Rock Golem. To cross the bridge safely, you must use your 'Aether Flare' magic spell, which costs exactly 50 [url=mana][color=yellow][wave]mana[/wave][/color][/url] to use.\n\nYou look at your magic meter and see that you only have 30 mana right now. You quickly search inside your leather bag and find a blue, glowing potion. The label on the bottle says it will give you 20 mana. You drink the sweet potion, and you feel your magic grow stronger! Now you have exactly enough mana to cast your spell.",
+		  "simplified_text": "Hint: The Mage needed 50 mana but only had 30. They drank a potion that gave them 20 more, so 30 + 20 = 50 mana!",
+		  "question": "What is the main idea of this story?",
+		  "options": [
+			"The Mage needs to find a wooden bridge.",
+			"The Mage uses a potion to get enough mana.",
+			"Blue magic potions are very tasty.",
+            "The monster knows how to do math."
+		  ],
+		  "correct_answer": 1
+		},
+		{
+		  "text": "You cross the bridge, but a magical iron door traps you inside a cave! The door has a voice and says, 'To pass, you must give me the correct number of glowing gems. I need the number of sides on a triangle, multiplied by three.'\n\nYou think back to your math class. A triangle has 3 sides. If you multiply 3 by 3, you get 9. You reach into your bag, pull out 9 shiny green gems, and place them into the door. The iron door creaks open with a loud groan.",
+		  "simplified_text": "Hint: A triangle has 3 sides. The door asked for that number multiplied by 3. So, 3 times 3 equals 9 gems.",
+		  "question": "Why did the Mage give the door 9 gems?",
+		  "options": [
+			"Because 3 plus 3 is 9.",
+			"Because 3 multiplied by 3 is 9.",
+			"Because the Mage only had 9 gems.",
+            "Because a triangle has 9 sides."
+		  ],
+		  "correct_answer": 1
+		},
+		{
+		  "text": "Deep in the cave, a giant Bat swoops down from the ceiling! The Bat has 25 health points. You have exactly 40 throwing stars in your inventory.\n\nYou throw 25 stars at the Bat to defeat it. The Bat falls to the ground, and the cave is safe. You quickly count your inventory to see how many throwing stars you have left for your next adventure. You subtract 25 from 40, leaving you with 15 stars remaining.",
+		  "simplified_text": "Hint: The Mage started with 40 stars and used 25 of them to defeat the bat. 40 minus 25 leaves 15 stars.",
+		  "question": "How many throwing stars does the Mage have left after defeating the Bat?",
+		  "options": [
+			"25 stars",
+			"40 stars",
+			"15 stars",
+            "10 stars"
+		  ],
+		  "correct_answer": 2
+		}
+	  ]
+	},
+	{
+	  "module_id": 3,
+	  "chunks": [
+		{
+		  "text": "You finally reach the fiery heart of the volcano. Standing before you is a Minion Anomaly! It is a monster made entirely of hot, angry fire and magma. The fire monster has 100 health points. \n\nYou know from your science class that water absorbs heat and cools down fire. You have a special Water Spell that takes away 50 health points each time you use it. You aim your magic staff and cast the spell two times. Whoosh! The liquid water turns straight into a gas when it hits the super-hot magma. The monster is defeated.",
+		  "simplified_text": "Hint: When the liquid water hit the super-hot magma, it absorbed the heat and turned straight into an invisible gas!",
+		  "question": "According to the text, what happens to the water when it hits the hot fire?",
+		  "options": [
+			"It turns into hard, cold ice.",
+			"It turns into an invisible gas.",
+			"It gives the monster more health.",
+            "It turns into a blue potion."
+		  ],
+		  "correct_answer": 1
+		},
+		{
+		  "text": "As you step over the defeated fire minion, a large wooden golem blocks the volcanic exit. The wood is extremely dry from the heat of the volcano.\n\nYou know that dry wood is very flammable. You cast a simple Spark Spell. The spark hits the wood, and a chemical reaction happens! The wood catches on fire and slowly burns away, turning into a pile of soft, grey ash. You brush the ash away and continue walking.",
+		  "simplified_text": "Hint: The Spark Spell caused a chemical reaction! The dry wood burned up and turned into a pile of soft, grey ash.",
+		  "question": "What happens to the dry wood when the Mage uses the Spark Spell?",
+		  "options": [
+			"It turns into hard iron.",
+			"It freezes into solid ice.",
+			"It burns and turns into grey ash.",
+            "It grows beautiful green leaves."
+		  ],
+		  "correct_answer": 2
+		},
+		{
+		  "text": "You reach the final exit, but a massive Iron Knight guards the door! The knight is very strong, but you notice something important. The knight's armor is wet from the rain outside, and the air is full of oxygen.\n\nYou use your Time Magic to speed up the clock. The water and oxygen react with the iron armor, causing it to undergo [url=oxidation][color=yellow][wave]oxidation[/wave][/color][/url]. The shiny iron turns into brittle, orange rust! The rusty armor crumbles into pieces, and you step out of the volcano as a hero.",
+		  "simplified_text": "Hint: The water from the rain and the oxygen in the air reacted with the iron armor, turning it into brittle, orange rust.",
+		  "question": "What causes the shiny iron armor to turn into orange rust?",
+		  "options": [
+			"Time Magic and Spark Spells.",
+			"A reaction with water and oxygen.",
+			"A chemical reaction with dry wood.",
+            "The heat from the magma."
+		  ],
+		  "correct_answer": 1
+		}
+	  ]
+	}
+  ]
+}

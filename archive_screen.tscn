@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://bq5excehorr1w"]
+
+[ext_resource type="Script" uid="uid://cx00a2ocup2sx" path="res://archive_screen.gd" id="1_y2sc3"]
+[ext_resource type="Texture2D" uid="uid://deo58fcuk7ysq" path="res://Backgrounds/Nature Landscapes Free Pixel Art/nature_1/origbig.png" id="2_7eoms"]
+[ext_resource type="FontFile" uid="uid://r06v6qdss2n" path="res://selvina/Selvina.ttf" id="2_y2sc3"]
+[ext_resource type="Texture2D" uid="uid://jlmg25g3ehjd" path="res://UI Assets/Sprites/UI_Flat_Banner02a.png" id="3_7kg0u"]
+[ext_resource type="Texture2D" uid="uid://boij6c5ltrgpw" path="res://UI Assets/Pipoya Popup  Emotes Pack/Pipoya Popup  Emotes Pack/pipo-popupemotes.png" id="5_wsl3b"]
+[ext_resource type="Texture2D" uid="uid://lf5sg7y6kwkx" path="res://UI Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_beige.png" id="6_6isxg"]
+[ext_resource type="Texture2D" uid="uid://ds0e83xg7p7tr" path="res://UI Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_beige_pressed.png" id="7_k2o7s"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jpqio"]
+texture = ExtResource("3_7kg0u")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vog4r"]
+atlas = ExtResource("5_wsl3b")
+region = Rect2(577.2096, 1.0481949, 28.677124, 26.28373)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdyk3"]
+atlas = ExtResource("5_wsl3b")
+region = Rect2(864.7819, 225.24255, 29.728882, 26.215454)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1u6us"]
+atlas = ExtResource("5_wsl3b")
+region = Rect2(704.78253, 65.837616, 29.458618, 26.75599)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nbp2s"]
+texture = ExtResource("6_6isxg")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kidcj"]
+texture = ExtResource("7_k2o7s")
+
+[node name="ArchiveScreen" type="Control" unique_id=1464175033]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y2sc3")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=975519448]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 3.0
+offset_right = -1.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_7eoms")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="." unique_id=2144437016]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 52.0
+offset_right = 599.0
+offset_bottom = 230.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_y2sc3")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_jpqio")
+text = "Artifact Archive"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1446597640]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 280.0
+offset_right = 714.0
+offset_bottom = 1279.0
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 4
+
+[node name="BadgeNoviceReader" type="TextureRect" parent="GridContainer" unique_id=1240238696]
+custom_minimum_size = Vector2(225, 120)
+layout_mode = 2
+texture = SubResource("AtlasTexture_vog4r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BadgeFlawlessVictory" type="TextureRect" parent="GridContainer" unique_id=617804520]
+custom_minimum_size = Vector2(225, 120)
+layout_mode = 2
+texture = SubResource("AtlasTexture_kdyk3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BadgeBossSlayer" type="TextureRect" parent="GridContainer" unique_id=1869387216]
+custom_minimum_size = Vector2(225, 120)
+layout_mode = 2
+texture = SubResource("AtlasTexture_1u6us")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BackButton" type="Button" parent="." unique_id=1031504686]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 1176.0
+offset_right = 242.0
+offset_bottom = 1281.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_y2sc3")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbp2s")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_kidcj")
+text = "Back
+"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

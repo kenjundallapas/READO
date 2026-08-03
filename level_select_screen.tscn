@@ -1,0 +1,200 @@
+[gd_scene format=3 uid="uid://dm88c2m1knunn"]
+
+[ext_resource type="Script" uid="uid://kin51da885e6" path="res://level_select_screen.gd" id="1_2stg7"]
+[ext_resource type="Texture2D" uid="uid://c3lkjfwanxjvy" path="res://UI Assets/BACKGROUNDS/Gemini_Generated_Image_n00cm2n00cm2n00c.png" id="2_n2bxw"]
+[ext_resource type="Texture2D" uid="uid://dsr1xe3lrbm7a" path="res://UI Assets/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_beige.png" id="3_vyxsk"]
+[ext_resource type="FontFile" uid="uid://r06v6qdss2n" path="res://selvina/Selvina.ttf" id="4_7y531"]
+[ext_resource type="Texture2D" uid="uid://byla2ffb4jlif" path="res://UI Assets/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_beige_pressed.png" id="4_xyjmv"]
+[ext_resource type="Texture2D" uid="uid://jlmg25g3ehjd" path="res://UI Assets/Sprites/UI_Flat_Banner02a.png" id="5_vyxsk"]
+[ext_resource type="Texture2D" uid="uid://ccpfpb8gykyg0" path="res://UI Assets/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_grey.png" id="6_fhn6o"]
+[ext_resource type="Texture2D" uid="uid://c06cs5cl6smjp" path="res://UI Assets/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_grey_pressed.png" id="7_nbp2s"]
+[ext_resource type="Texture2D" uid="uid://lf5sg7y6kwkx" path="res://UI Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_beige.png" id="9_bridw"]
+[ext_resource type="Texture2D" uid="uid://ds0e83xg7p7tr" path="res://UI Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_beige_pressed.png" id="10_40hiq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vog4r"]
+texture = ExtResource("3_vyxsk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7y531"]
+texture = ExtResource("4_xyjmv")
+modulate_color = Color(0.39308554, 0.3930855, 0.39308548, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kdyk3"]
+texture = ExtResource("3_vyxsk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p41hd"]
+texture = ExtResource("4_xyjmv")
+modulate_color = Color(0.47788018, 0.47788012, 0.47788012, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1u6us"]
+texture = ExtResource("6_fhn6o")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vw282"]
+texture = ExtResource("7_nbp2s")
+modulate_color = Color(0.39215687, 0.39215687, 0.39215687, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fhn6o"]
+texture = ExtResource("5_vyxsk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nbp2s"]
+texture = ExtResource("9_bridw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kidcj"]
+texture = ExtResource("10_40hiq")
+
+[node name="LevelSelectScreen" type="Control" unique_id=1306690428]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2stg7")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1493668672]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_n2bxw")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Map Area" type="Control" parent="." unique_id=1350633317]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Level1Button" type="Button" parent="Map Area" unique_id=1649097061]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 263.0
+offset_right = 389.0
+offset_bottom = 360.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_vog4r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7y531")
+
+[node name="Label" type="Label" parent="Map Area/Level1Button" unique_id=1859487928]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_7y531")
+theme_override_font_sizes/font_size = 35
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Level2Button" type="Button" parent="Map Area" unique_id=1344118737]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 393.0
+offset_right = 516.0
+offset_bottom = 484.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_kdyk3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_p41hd")
+
+[node name="Label" type="Label" parent="Map Area/Level2Button" unique_id=1231437945]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 8.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_7y531")
+theme_override_font_sizes/font_size = 35
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Level3Button" type="Button" parent="Map Area" unique_id=312231239]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 496.0
+offset_right = 354.0
+offset_bottom = 580.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_1u6us")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vw282")
+
+[node name="Label" type="Label" parent="Map Area/Level3Button" unique_id=1568467773]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -1.0
+offset_right = 2.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_7y531")
+theme_override_font_sizes/font_size = 35
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=180876971]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 52.0
+offset_right = 599.0
+offset_bottom = 230.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_7y531")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_fhn6o")
+text = "Level Selection"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="Button" parent="." unique_id=2121765270]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 1212.0
+offset_right = 173.0
+offset_bottom = 1281.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_7y531")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbp2s")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_kidcj")
+text = "Back
+"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1616398740]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 8.0
+offset_right = 4.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[connection signal="pressed" from="Map Area/Level1Button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="Map Area/Level2Button" to="." method="_on_level_2_button_pressed"]
+[connection signal="pressed" from="Map Area/Level3Button" to="." method="_on_level_3_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

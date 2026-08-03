@@ -11,13 +11,24 @@ config_version=5
 [application]
 
 config/name="Witch Game"
+run/main_scene="uid://gr53fsgsmwp2"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://5tpmy0ok7nq4"
+BadgeManager="*uid://cyx0crricgevs"
+
 [display]
 
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/size/window_width_override=360
+window/size/window_height_override=640
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/handheld/orientation=1
 
 [physics]
 
